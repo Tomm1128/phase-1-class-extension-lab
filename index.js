@@ -30,3 +30,13 @@ class Triangle extends Polygon {
     }
   }
 }
+
+class Square extends Polygon {
+  get isValid(){
+    return this.perimeter / 4 === this.sides[0]
+  }
+
+  get area(){
+    return this.sides[0] ** 2
+  }
+}
